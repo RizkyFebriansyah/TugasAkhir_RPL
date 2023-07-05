@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" cotnetn="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciputra Sport Club</title>
+
+    <!--buat ikon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--link slidder css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--buat css file link-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- script JS -->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <!--Header Section starts-->
+    <header class="header">
+        <a href="#Home" class="logo">
+            <img src="image/logofutsal.png"> <!--belom masukin gambar logo (yang dikiri atas)-->
+        </a>
+
+        <nav class="navigasi">
+            <a href="#Home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#Menu">Lapangan</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+
+        <form action="" method="GET" class="search-form">
+            <input type="search" id="search-bar" placeholder="Cari Disini" name="q">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <!-- <i class ="fas fa-search" id ="search-btn"></i> -->
+            <!-- <i class="fas fa-shopping-cart" id="cart-btn"></i> -->
+            <a href="loginpage.html" class="fas fa-user" id="user-cart"> Login</a>
+        </div>
+
+
+    </header>
+    <!--Header Section Ends-->
+
+    <!--slider section starts-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="home" id="Home">
+        <div class="content">
+            <section class="main swiper mySwiper">
+                <div class="wrapper swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="image/sliderfutsal.jpg" alt="" class="image">
+                        <div class="image-data">
+                            <h2 class="text">Selamat Datang</h2>
+                            <p>CIPUTRA SPORT CLUB</p>
+                            <a href="reservasi/reservasi.html" class="button">Reservasi</a>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <img src="image/sliderfutsal1.jpg" alt="" class="image">
+                        <div class="image-data">
+                            <h2 class="text">Selamat Datang</h2>
+                            <p>CIPUTRA SPORT CLUB</p>
+                            <a href="reservasi/reservasi.html" class="button">Reservasi</a>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <img src="image/sliderfutsal2.jpg" alt="" class="image">
+                        <div class="image-data">
+                            <h2 class="text">Selamat Datang</h2>
+                            <p>CIPUTRA SPORT CLUB</p>
+                            <a href="reservasi/reservasi.html" class="button">Reservasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next nav-btn"></div>
+                <div class="swiper-button-prev nav-btn"></div>
+                <div class="swiper-pagination"></div>
+
+
+        </div>
+    </section>
+
+
+
+    <!--buat js file link-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!--slider section ends-->
+
+    <!--section about starts-->
+    <section class="about" id="about">
+        <h1 class="heading"> <span>about</span> us </h1>
+        <div class="row">
+            <div class="image">
+                <img src="image/About.png" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Ciputra Sport Club</h3>
+                <p><strong> sebuah tempat futsal yang berdiri sejak tahun 2019. Tempat ini terletak di daerah yang
+                        strategis dan mudah dijangkau, yakni di kompleks Ciputra World</strong></p> <br>
+                <p><strong>Ciputra.inc Sport Club menawarkan lapangan futsal indoor yang luas dan modern dengan
+                        fasilitas yang lengkap. Lapangan futsal ini dilengkapi dengan rumput sintetis berkualitas tinggi
+                        yang memastikan kenyamanan dan keamanan bagi para pemain futsal. Selain itu, Ciputra.inc Sport
+                        Club juga menyediakan fasilitas pencahayaan yang baik, sehingga lapangan futsal dapat digunakan
+                        pada malam hari.</p>
+                <p><strong>Tempat futsal ini juga dilengkapi dengan ruang ganti yang nyaman dan bersih. Ruang ganti ini
+                        dilengkapi dengan toilet, shower, dan tempat penyimpanan barang. Selain itu, Ciputra.inc Sport
+                        Club juga menyediakan layanan penyewaan alat futsal seperti sepatu dan bola.
+                        Dengan fasilitas yang lengkap dan program pelatihan yang berkualitas, Ciputra.inc Sport Club
+                        menjadi tempat yang ideal bagi para pecinta futsal untuk bermain dan mengasah kemampuan
+                        mereka.</strong></p>
+            </div>
+
+        </div>
+
+        <section class="team">
+            <h1 class="heading"> Gallery</h1>
+            <div class="team-member">
+
+                <div class="member-image">
+                    <img src="image/PXlapang-A.jpg" alt="">
+                    <h3>LAPANGAN A</h3>
+                    <p></p>
+                </div>
+
+                <div class="member-image">
+                    <img src="image/PXlapang-B.jpg" alt="">
+                    <h3>LAPANGAN B</h3>
+                    <p></p>
+                </div>
+
+                <div class="member-image">
+                    <img src="image/PXLapangan-FutsalVIP.jpg" alt="">
+                    <h3>LAPANG VIP</h3>
+                    <p></p>
+                </div>
+
+                <div class="member-image">
+                    <img src="image/PXlapangan-kompe.jpg" alt="">
+                    <h3>LAPANG KHUSUS</h3>
+                    <p>KOMPETISI</p>
+                </div>
+            </div>
+
+        </section>
+        <!---section about ends-->
+
+        <!--Lapangan section starts-->
+        <section class="menu" id="Menu">
+            <br>
+            <h1 class="heading">Lapangan<span></span> </h1>
+
+            <h3 class="makanan">Daftar Lapangan Tersedia</h3>
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="menu-item">
+                        <img src="image/lapang-A.jpg" alt="">
+                        <h3>Lapangan A</h3>
+                        <div class="price">Rp189.000<span>/hours</span></div>
+                        <a href="reservasi/reservasi.html" class="btn">Reservasi</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="menu-item">
+                        <img src="image/lapang-B.jpg" alt="">
+                        <h3>Lapangan B</h3>
+                        <div class="price">Rp199.000<span>/hours</span></div>
+                        <a href="reservasi/reservasi.html" class="btn"> Reservasi</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="menu-item">
+                        <img src="image/Lapangan-FutsalVIP.png" alt="">
+                        <h3>Lapangan VIP</h3>
+                        <div class="price">Rp299.000<span>/hours</span></div>
+                        <a href="reservasi/reservasi.html" class="btn">Reservasi</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="menu-item">
+                        <img src="image/lapangan-kompe.jpg" alt="">
+                        <h3>LAPANG KHUSUS</h3>
+                        <div class="price">Rp999.000<span>/3hours</span></div>
+                        <a href="whatsapp.com" class="btn">Reservasi by Admin</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="minuman">Pesan Minuman!</h3>
+
+            <div class="box-container">
+                <div class="box" id="tum">
+                    <div class="menu-item">
+                        <img src="image/esteh.jpg" alt="">
+                        <h3>Es Teh Manis</h3>
+                        <div class="price">Rp14.999<span></span></div>
+                        <a href="#" class="btn">Masukkan Keranjang</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="menu-item">
+                        <img src="image/esjeruk.jpg" alt="">
+                        <h3>Es Jeruk</h3>
+                        <div class="price">Rp19.000<span></span></div>
+                        <a href="#" class="btn"> Masukkan Keranjang</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="menu-item">
+                        <img src="image/airputih.jpg" alt="">
+                        <h3>Air Mineral 600ml</h3>
+                        <div class="price">Rp39.000<span>/dus</span></div>
+                        <a href="#" class="btn">Masukkan Keranjang</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="menu-item">
+                        <img src="image/kopi.jpg" alt="">
+                        <h3>Kopi</h3>
+                        <div class="price">Rp15.000<span></span></div>
+                        <a href="#" class="btn">Masukkan Keranjang</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!--section menu ends-->
+
+
+
+        <!---section contact starts-->
+        <section class="contact" id="contact">
+            <h1 class="heading"> <span>contact</span> informations </h1>
+            <!--dr sini-->
+            <div class="icons-container">
+                <div class="icons">
+                    <div class="left-side">
+                        <div class="alamat details">
+                            <i class="fas fa-phone"></i>
+                            <div class="topic">Nomor Telepon</div>
+                            <div class="text">0267-8261-391</div>
+                        </div>
+
+                        <div class="email details">
+                            <i class="fas fa-envelope"></i>
+                            <div class="topic">Email</div>
+                            <div class="text-one">ciputrainc@gmail.com</div>
+                        </div>
+
+                        <div class="lokasi details">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="topic">lokasi</div>
+                            <div class="text-one">Karawang, Jawa Barat</div>
+                            <a href="https://www.google.com/maps/place/Karawang,+Karawang+Regency,+West+Java/@-6.3228036,107.3372343,12z/data=!3m1!4b1!4m5!3m4!1s0x2e69f6c28d1b2f33:0x302da99e047d4f3!8m2!3d-6.3030571!4d107.3373859"
+                                target="_blank">Lihat di Google Maps</a>
+
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="topic-text">Kritik & Saran</div>
+                        <p>Terima kasih sudah berolahraga hari ini!, untuk review atau tanggapan kalian tentang Ciputra
+                            sport club bisa isi form dibawah ini!</p>
+
+
+                        <form action="">
+                            <div class="input-box">
+                                <input type="text" placeholder="Masukkan Nama" class="box">
+                            </div>
+
+                            <div class="input-box">
+                                <input type="email" placeholder="Masukkan Email" class="box">
+                            </div>
+
+                            <div class="input-box message-box">
+                                <textarea placeholder="Ketik Pesan" class="box"></textarea>
+                            </div>
+
+                            <div class="button"></div>
+                            <input type="submit" value="send" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <!--section contact ends-->
+
+
+
+
+
+
+</body>
+
+</html>

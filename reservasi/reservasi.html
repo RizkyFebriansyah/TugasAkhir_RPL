@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" cotnetn="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciputra Sport Club</title>
+
+    <!--buat ikon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--link slidder css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--buat css file link-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- script JS -->
+    <script src="js/script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: linear-gradient(to bottom, #f5f5f5, #c79d6c);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .card-img {
+            background: url("image/sliderfutsal2.jpg") center/cover no-repeat;
+        }
+
+        form {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        /* Style untuk input */
+        input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30
+        }
+
+        .btn-submit {
+            background-color: #1426c7;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .btn-submit:hover {
+            background-color: #aaaaaa;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <section class="banner">
+        <h2></h2>
+        <div class="card-container">
+            <div class="card-img">
+                <img src="image/sliderfutsal1" alt="">
+            </div>
+
+            <div class="container">
+                <h1>Formulir Reservasi Lapangan Futsal</h1>
+                <form action="submit.php" method="post">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+
+                    <label for="telepon">Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" required>
+                    <br>
+
+                    <label for="tanggal">Tanggal Reservasi:</label>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                    <br>
+
+                    <label for="jam">Jam Reservasi:</label>
+                    <select id="jam" name="jam" required>
+                        <option value="">-- Pilih Jam --</option>
+                        <option value="08:00 - 09:00">08:00 - 09:00</option>
+                        <option value="09:00 - 10:00">09:00 - 10:00</option>
+                        <option value="11:00 - 12:00">11:00 - 12:00</option>
+                        <option value="12:00 - 13:00">12:00 - 13:00</option>
+                        <option value="13:00 - 14:00">13:00 - 14:00</option>
+                        <option value="14:00 - 15:00">14:00 - 15:00</option>
+                        <option value="15:00 - 16:00">15:00 - 16:00</option>
+                        <option value="16:00 - 17:00">16:00 - 17:00</option>
+                        <option value="17:00 - 18:00">17:00 - 18:00</option>
+                        <option value="18:00 - 19:00">18:00 - 19:00</option>
+                        <option value="19:00 - 20:00">19:00 - 20:00</option>
+                        <option value="20:00 - 21:00">20:00 - 21:00</option>
+                        <option value="21:00 - 22:00">21:00 - 22:00</option>
+                    </select>
+                    <br>
+
+                    <label for="paket">Pilih Lapangan:</label>
+                    <select id="paket" name="paket" required>
+                        <option value="">-- Pilih Lapangan --</option>
+                        <option value="Paket A">Lapangan A</option>
+                        <option value="Paket B">Lapangan B</option>
+                        <option value="Paket C">Lapangan VIP</option>
+                    </select>
+                    <br>
+                    <label for="catatan">Catatan:</label>
+                    <textarea id="catatan" name="catatan"></textarea>
+                    <br>
+                    <br>
+                    <br>
+                    <section class="payment">
+                        <h2>Pembayaran</h2>
+                        <div class="payment-methods">
+                            <div class="payment-method">
+                                <input type="radio" id="payment-method-1" name="payment-method" value="dompet-virtual">
+                                <label for="payment-method-1">Dompet Virtual</label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="payment-method-2" name="payment-method" value="bank-transfer">
+                                <label for="payment-method-2">Bank Transfer</label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="payment-method-3" name="payment-method" value="credit-card">
+                                <label for="payment-method-3">Kartu Kredit</label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <button type="submit" class="btn-submit">Reservasi Sekarang</button>
+                </form>
+
+                <p style="font-size: 12px; color: gray;">*Note:Semua Pembayaran hanya Melalui Rekening atau Dompet
+                    Digital An. PT. CIPUTRA SPORT</p>
+                <p style="font-size: 12px; color: gray;">Mohon untuk lakukan konfirmasi ke admin terlebih dahulu jika
+                    pembayaran menggunakan cash di tempat.</p>
+
+            </div>
+            <script src="script.js"></script>
+</body>
+
+</html>
